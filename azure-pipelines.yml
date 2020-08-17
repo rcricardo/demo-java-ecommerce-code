@@ -13,7 +13,7 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'Compasso_ACR'
-    repository: 'compasso.azurecr.io/compasso-demo-ecommerce'
+    repository: 'compasso-demo-ecommerce'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
 - task: CopyFiles@2
