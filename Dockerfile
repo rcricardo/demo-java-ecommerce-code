@@ -1,6 +1,6 @@
 FROM quay.io/jlopsti/ocp-tomcat:1
 
-COPY uol/ecommerce/ /opt/apache-tomcat-7.0.88/webapps/ROOT/
+COPY . /opt/apache-tomcat-7.0.88/webapps/ROOT/
 
 RUN touch /opt/apache-tomcat-7.0.88/logs/catalina.out && \
     chmod 777 /opt/apache-tomcat-7.0.88/logs /opt/apache-tomcat-7.0.88/work && \
