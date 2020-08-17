@@ -16,6 +16,12 @@ steps:
     repository: 'compasso-demo-ecommerce'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+- task: Docker@2
+  inputs:
+    containerRegistry: 'Compasso_ACR'
+    repository: 'compasso-demo-ecommerce'
+    command: 'push'
+    tags: 'latest'
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(Build.SourcesDirectory)'
