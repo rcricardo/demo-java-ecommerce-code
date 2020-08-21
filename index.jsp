@@ -44,7 +44,7 @@
 				</div>
 
 				<span class="topbar-child1">
-					Frete gr&aacute;tis para compras acima de R$150,00
+					Frete gr&aacute;tis para compras acima de R$10,00
 				</span>
 
 				<div class="topbar-child2">
